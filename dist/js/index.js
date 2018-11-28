@@ -1,7 +1,14 @@
 // ===================================== require start =====================================
 {
 
+	jQuery = require('jquery');
 	$ = require('jquery');
+
+  require('jquery-ui-css/jquery-ui');
+
+  require('jquery-ui/ui/widgets/dialog');
+
+  require("bootstrap");
 
 }
 // ===================================== require  end  =====================================
