@@ -1,90 +1,175 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Title</title>
-		<link rel="stylesheet" href="./dist/css/custom.css">
-		<script type="text/javascript" src="./dist/js/app.js"></script>
-	</head>
-	<body class="bg-light">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-	<div class="container">
-		<div class="py-1 text-center">
-			<h2>DEMO</h2>
-			<p class="lead">modalを使いこなす</p>
+	<title>MODAL DEMO</title>
+
+	<link rel="stylesheet" href="./dist/css/custom.css">
+
+	<script type="text/javascript" src="./dist/js/app.js"></script>
+
+</head>
+
+<body class="bg-light">
+
+<div class="container">
+
+	<div class="py-5 text-center">
+		<h2>MODAL DEMO</h2>
+		<p class="lead">MODALを使いこなす</p>
+	</div>
+
+	<div class="row">
+
+		<!-- メインメニュー -->
+		<div class="col-md-12 order-md-1">
+
+			<div class="row">
+
+				<div class="col-md-12 mb-3">
+
+					<button type="button" class="btn btn-primary" id="intro">
+						<span>画面の説明開始</span>
+					</button>
+
+				</div>
+
+				<div class="col-md-6 mb-3">
+					<label for="firstName">First name</label>
+					<input type="text" class="form-control" id="firstName">
+				</div>
+
+				<div class="col-md-6 mb-3">
+					<label for="lastName">Last name</label>
+					<input type="text" class="form-control" id="lastName">
+				</div>
+
+				<div class="col-md-12 mb-3">
+
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="modalOpenHtml">
+						<span>htmlでmodal起動</span>
+					</button>
+
+					<button type="button" class="btn btn-primary" id="modalOpenJs">
+						<span>jsでmodal起動</span>
+					</button>
+
+				</div>
+
+
+
+				<div class="col-md-12 mb-3">
+					<h5>モーダルのタブを親画面から操作</h5>
+					<button type="button" class="btn btn-primary tabOpenHome my-1">
+						<span>HomeタブOpen</span>
+					</button>
+					<button type="button" class="btn btn-primary tabOpenProfile my-1">
+						<span>ProfileタブOpen</span>
+					</button>
+					<button type="button" class="btn btn-primary tabOpenContact my-1">
+						<span>ContactタブOpen</span>
+					</button>
+
+				</div>
+
+			</div>
+
 		</div>
+	</div>
 
-		<div class="row">
-			<div class="col-md-12 order-md-1">
-				<form class="needs-validation">
+	<div class="col-md-12 order-md-1">
 
-					<div class="row mb-3">
+		<!-- Modal -->
+		<div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
 
-						<div class="col-md-6">
-							<label for="firstName">First name</label>
-							<input type="text" class="form-control" id="firstName" placeholder="" value="">
-						</div>
-
-						<div class="col-md-6">
-							<label for="lastName">Last name</label>
-							<input type="text" class="form-control" id="lastName" placeholder="" value="">
-						</div>
-
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
 					</div>
 
+					<div class="modal-body">
 
-					<div class="row mb-1">
+						<div class="row">
 
-						<div class="col-md-12">
+							<div class="col-md-12 mb-3">
 
-							<!-- Button trigger modal -->
-							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-								Launch demo modal
-							</button>
+								<button type="button" class="btn btn-primary" id="introModal">
+									<span>画面の説明開始</span>
+								</button>
 
-							<!-- Modal -->
-							<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-								<div class="modal-dialog" role="document">
-									<div class="modal-content">
+							</div>
 
-										<div class="modal-header">
-											<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-												<span aria-hidden="true">&times;</span>
-											</button>
-										</div>
+							<div class="col-md-6 mb-3">
+								<label for="aaa">aaa</label>
+								<input type="text" class="form-control" id="aaa">
+							</div>
 
-										<div class="modal-body">
-
-											<label for="aaa">aaa</label>
-											<input type="text" class="form-control" id="aaa" placeholder="" value="">
+							<div class="col-md-6 mb-3">
+								<label for="bbb">bbb</label>
+								<input type="text" class="form-control" id="bbb">
+							</div>
 
 
-											<label for="bbb">bbb</label>
-											<input type="text" class="form-control" id="bbb" placeholder="" value="">
+							<div class="col-md-12 mb-3">
 
-										</div>
+								<button type="button" class="btn btn-primary tabOpenHome my-1">
+									<span>HomeタブOpen</span>
+								</button>
+								<button type="button" class="btn btn-primary tabOpenProfile my-1">
+									<span>ProfileタブOpen</span>
+								</button>
+								<button type="button" class="btn btn-primary tabOpenContact my-1">
+									<span>ContactタブOpen</span>
+								</button>
 
-										<div class="modal-footer">
-											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-											<button type="button" class="btn btn-primary">Save changes</button>
-										</div>
+							</div>
+
+							<div class="col-md-12 mb-3">
+								<nav>
+									<div class="nav nav-tabs" id="nav-tab" role="tablist">
+										<a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="false">home</a>
+										<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">profile</a>
+										<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">contact</a>
 									</div>
+								</nav>
+
+								<div class="tab-content" id="nav-tabContent">
+									<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">AAAAA</div>
+									<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">BBBBB</div>
+									<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">CCCCC</div>
 								</div>
+
 							</div>
 
 						</div>
 
 					</div>
 
-
-				</form>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal" id="closeModal">Close</button>
+						<button type="button" class="btn btn-primary" id="saveChanges">Save changes</button>
+					</div>
+				</div>
 			</div>
 		</div>
 
-		<footer class="my-5 pt-1 text-muted text-center text-small">
-			<p class="mb-1">&copy; 2018 wakaba-bbq</p>
-		</footer>
 	</div>
-	</body>
+</div>
+
+	<footer class="pt-5 text-muted text-center text-small">
+		<p class="mb-1">&copy; 2018 wakaba-bbq</p>
+	</footer>
+
+</div>
+
+</body>
 </html>
