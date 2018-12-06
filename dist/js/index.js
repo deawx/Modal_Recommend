@@ -137,7 +137,6 @@
 
 // ===================================== 処理 start =====================================
 $(function() {
-	$('div.modal').appendTo('body');
 	console.log("open");
 
   // modalボタン押下時の処理
@@ -189,26 +188,26 @@ $(function() {
 			switch (e.relatedTarget.id) {
 				case "nav-home-tab":
 					console.log("HomeタグClose");
-				break;
+					break;
 				case "nav-profile-tab":
 					console.log("ProfileタグClose");
-				break;
+					break;
 				case "nav-contact-tab":
 					console.log("ContactタグClose");
-				break;
+					break;
 			}
 		}
 
 		switch (e.target.id) {
 			case "nav-home-tab":
 				console.log("HomeタグOpen");
-			break;
+				break;
 			case "nav-profile-tab":
 				console.log("ProfileタグOpen");
-			break;
+				break;
 			case "nav-contact-tab":
 				console.log("ContactタグOpen");
-			break;
+				break;
 		}
 	});
 
